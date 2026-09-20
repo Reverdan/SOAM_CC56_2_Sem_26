@@ -153,6 +153,26 @@ lsb_release -r
 lsb_release -c
 ~~~
 
+### `grep`
+**Resumo:** Procura padrões de texto em arquivos ou na saída de outros comandos, exibindo apenas as linhas que correspondem ao critério informado.
+**Exemplos:**
+~~~bash
+# Busca por uma palavra em um arquivo
+grep "erro" sistema.log
+
+# Busca ignorando diferença entre maiúsculas e minúsculas
+grep -i "warning" sistema.log
+
+# Busca mostrando o número da linha
+grep -n "falha" sistema.log
+
+# Busca recursivamente em diretórios
+grep -r "localhost" /etc
+
+# Busca invertida (linhas que NÃO contêm o padrão)
+grep -v "^#" arquivo.conf
+~~~
+
 ### `os-release`
 **Resumo:** Não é um comando executável, mas um arquivo de configuração que contém dados de identificação do sistema operacional.
 **Exemplos:**
